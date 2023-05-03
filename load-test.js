@@ -17,6 +17,7 @@ function makeRequest() {
 			overAllTime += responseTime;
 			counter++;
 			if (counter === 10) {
+				console.log(overAllTime);
 				const averageTime = (overAllTime / numberOfRequests).toFixed(3);
 				console.log(
 					"the average time the request took is " + averageTime + "ms"
